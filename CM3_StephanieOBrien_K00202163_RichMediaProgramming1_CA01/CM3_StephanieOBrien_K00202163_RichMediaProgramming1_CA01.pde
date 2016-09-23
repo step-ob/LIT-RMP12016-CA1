@@ -1,6 +1,9 @@
 
 color fillVal = color(126);
+int circleX = 150;
+int circleY = 150;
 
+int speed = 5;
 
 void setup ()
 {
@@ -12,7 +15,8 @@ void setup ()
 void draw ()
 {
   fill (fillVal);
-  ellipse(250, 250, 100, 100);
+  ellipse(circleX, circleY, 100, 100);
+
 }
 
 void keyPressed () {
@@ -23,8 +27,11 @@ void keyPressed () {
       fillVal = 0;
     } if (keyCode == RIGHT) {
       fillVal = 50;
+      circleX +=speed;
+      
     } if (keyCode == LEFT) {
       fillVal = 180; 
+      circleX -=speed;
     }
   } else {
     fillVal = 126; 
