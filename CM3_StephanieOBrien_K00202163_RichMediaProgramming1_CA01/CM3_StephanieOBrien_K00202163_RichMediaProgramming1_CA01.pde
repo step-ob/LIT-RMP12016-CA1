@@ -23,8 +23,12 @@ void keyPressed () {
   if (key == CODED) {
     if (keyCode == UP) {
       fillVal = 255;
+      circleY -=speed;
+      
     } if (keyCode == DOWN) {
       fillVal = 0;
+      circleY +=speed;
+      
     } if (keyCode == RIGHT) {
       fillVal = 50;
       circleX +=speed;
@@ -32,6 +36,7 @@ void keyPressed () {
     } if (keyCode == LEFT) {
       fillVal = 180; 
       circleX -=speed;
+      
     }
   } else {
     fillVal = 126; 
