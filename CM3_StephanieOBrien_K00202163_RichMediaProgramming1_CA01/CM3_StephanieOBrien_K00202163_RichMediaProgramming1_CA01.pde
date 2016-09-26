@@ -5,6 +5,7 @@ int circleY = 150;
 
 int speed = 5;
 
+
 void setup ()
 {
   size (600, 600);
@@ -20,13 +21,14 @@ void draw ()
 }
 
 void keyPressed () {
+  background (0);
   if (key == CODED) {
     if (keyCode == UP) {
       fillVal = 255;
       circleY -=speed;
       
     } if (keyCode == DOWN) {
-      fillVal = 0;
+      fillVal = 90;
       circleY +=speed;
       
     } if (keyCode == RIGHT) {
