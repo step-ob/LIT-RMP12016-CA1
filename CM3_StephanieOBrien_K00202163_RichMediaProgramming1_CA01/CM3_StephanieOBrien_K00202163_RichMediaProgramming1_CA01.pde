@@ -27,19 +27,19 @@ void draw ()
   if (key == CODED) {
     if (keyCode == UP) {
    //   fillVal = 255;
-      circle -=speed;
+   //   circle -=speed;
       
     } if (keyCode == DOWN) {
   //    fillVal = 90;
-      y +=speed;
+   //   y +=speed;
       
     } if (keyCode == RIGHT) {
    //   fillVal = 50;
-      x +=speed;
+   //   x +=speed;
       
     } if (keyCode == LEFT) {
    //   fillVal = 180; 
-      x -=speed;
+   //  x -=speed;
       
     }
   } else {
