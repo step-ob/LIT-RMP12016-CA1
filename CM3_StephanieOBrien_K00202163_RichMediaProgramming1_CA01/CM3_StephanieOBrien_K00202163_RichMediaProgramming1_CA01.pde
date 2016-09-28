@@ -17,6 +17,11 @@ void setup ()
 void draw ()
 {
   background (255);
+  
+  for (int u=0; u<20; u++) 
+  {
+    allCircles[u].display();
+  }
 }
 
 void keyPressed () 
