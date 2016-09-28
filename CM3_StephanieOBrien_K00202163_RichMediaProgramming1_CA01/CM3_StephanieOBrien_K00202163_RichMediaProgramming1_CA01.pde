@@ -25,31 +25,29 @@ void draw ()
 
 void keyPressed () 
 {
-  if (key == CODED) 
+  for (int o=0; o<20; o++)
   {
-    for (int o=0; o<20; o++)
+    if (keyCode == UP)
     {
-      if (keyCode == UP)
-      {
-        allCircles[o].y +=speed;
-      }
+      allCircles[o].yPos +=speed;
     }
-   
+  }
+}
       
-    } if (keyCode == DOWN) {
+ //   } if (keyCode == DOWN) {
   //    fillVal = 90;
    //   y +=speed;
       
-    } if (keyCode == RIGHT) {
+ //   } if (keyCode == RIGHT) {
    //   fillVal = 50;
    //   x +=speed;
       
-    } if (keyCode == LEFT) {
+ //   } if (keyCode == LEFT) {
    //   fillVal = 180; 
    //  x -=speed;
       
-    }
-  } else {
+  //  }
+ // } else {
    // fillVal = 126; 
-  }
-}
+  //}
+//}
