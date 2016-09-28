@@ -1,18 +1,16 @@
 
 int speed = 5;
 
-
-float [] allCircles = new float [20];
+Circle [] allCircles = new Circle [20];
 
 void setup ()
 {
   size (800, 800);
   background (255);
-  Circle circle = new Circle ();
-  Circle circle1 = new Circle ();
-  circle.display();
-  circle1.display();
-  
+  for (int i=0; i<20; i++)
+  {
+    allCircles[i] = new Circle();
+  }
 }
 
 
