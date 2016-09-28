@@ -2,6 +2,7 @@
 int speed = 5;
 
 Circle [] allCircles = new Circle [20];
+Face myFace;
 
 void setup ()
 {
@@ -11,6 +12,7 @@ void setup ()
   {
     allCircles[i] = new Circle();
   }
+  myFace = new Face();
 }
 
 
@@ -21,6 +23,7 @@ void draw ()
   {
     allCircles[u].display();
   }
+  myFace.display();
 }
 
 void keyPressed () 
