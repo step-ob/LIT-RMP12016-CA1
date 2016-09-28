@@ -1,10 +1,7 @@
 class Face 
 {
   float widthSize = 400;
-  float heightSize = 400;  
-  float rColor = 153;
-  float gColor = 77;
-  float bColor = 0;
+  float heightSize = 400;
   
   void display (int xPos, int yPos) 
   {
@@ -13,12 +10,18 @@ class Face
     translate(xPos, yPos);
     
     noStroke();
-    fill(rColor, gColor, bColor);
+    fill(252, 252, 233);
     ellipse(0, 0, widthSize, heightSize);
+    
+    stroke(126);
+    line(-180,80,180,80);
+    strokeWeight(6);
   
     fill(255,0,0);
-    ellipse(0,0,100,50);
-    ellipse(250,100,100,50);
+
+    noStroke();
+    ellipse(-50,90,100,50);
+    ellipse(50,90,100,50);
     
     popMatrix();
   }
