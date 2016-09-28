@@ -16,8 +16,7 @@ void setup ()
 
 void draw ()
 {
-  background (255);
-  
+  background (255); 
   for (int u=0; u<20; u++) 
   {
     allCircles[u].display();
@@ -26,11 +25,16 @@ void draw ()
 
 void keyPressed () 
 {
-
-  if (key == CODED) {
-    if (keyCode == UP) {
-   //   fillVal = 255;
-   //   circle -=speed;
+  if (key == CODED) 
+  {
+    for (int o=0; o<20; o++)
+    {
+      if (keyCode == UP)
+      {
+        allCircles[o].y +=speed;
+      }
+    }
+   
       
     } if (keyCode == DOWN) {
   //    fillVal = 90;
