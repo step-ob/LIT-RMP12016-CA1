@@ -33,7 +33,7 @@ void keyPressed ()
     }
     if (keyCode == DOWN)
     {
-      allCircles[o].yPos -=speed;
+      allCircles[o].yPos +=speed;
     }
     if (keyCode == LEFT)
     {
@@ -41,7 +41,7 @@ void keyPressed ()
     }
     if (keyCode == RIGHT)
     {
-      allCircles[o].xPos -=speed;
+      allCircles[o].xPos +=speed;
     }    
   }
 }
