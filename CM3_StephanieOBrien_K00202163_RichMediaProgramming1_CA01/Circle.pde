@@ -7,16 +7,16 @@ class Circle {
   float gColor = random(255);
   float bColor = random(255);
   
-  Circle (){
-   
+  Circle ()
+  { 
     this.xPos = xPos;
     this.yPos = yPos;
   }
   
-  void display () {
+  void display () 
+  {
     noStroke();
     fill(rColor, gColor, bColor);
     ellipse(xPos, yPos, r, r);
   }
- 
 }
