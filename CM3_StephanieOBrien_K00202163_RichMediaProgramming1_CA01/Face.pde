@@ -10,14 +10,14 @@ class Face
   {
     
     pushMatrix();
+    translate(xPos, yPos);
     
     noStroke();
     fill(rColor, gColor, bColor);
-    ellipse(mouseX, mouseY, widthSize, heightSize);
+    ellipse(0, 0, widthSize, heightSize);
   
-    translate(xPos, yPos);
     fill(255,0,0);
-    ellipse(150,100,100,50);
+    ellipse(0,0,100,50);
     ellipse(250,100,100,50);
     
     popMatrix();
