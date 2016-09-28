@@ -31,23 +31,18 @@ void keyPressed ()
     {
       allCircles[o].yPos -=speed;
     }
+    if (keyCode == DOWN)
+    {
+      allCircles[o].yPos -=speed;
+    }
+    if (keyCode == LEFT)
+    {
+      allCircles[o].xPos -=speed;
+    }
+    if (keyCode == RIGHT)
+    {
+      allCircles[o].xPos -=speed;
+    }    
   }
 }
       
- //   } if (keyCode == DOWN) {
-  //    fillVal = 90;
-   //   y +=speed;
-      
- //   } if (keyCode == RIGHT) {
-   //   fillVal = 50;
-   //   x +=speed;
-      
- //   } if (keyCode == LEFT) {
-   //   fillVal = 180; 
-   //  x -=speed;
-      
-  //  }
- // } else {
-   // fillVal = 126; 
-  //}
-//}
