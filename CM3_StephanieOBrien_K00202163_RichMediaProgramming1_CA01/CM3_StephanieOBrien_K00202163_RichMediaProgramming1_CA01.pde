@@ -7,7 +7,7 @@ void setup ()
 {
   size (800, 800);
   background (255);
-  for (int i=0; i<20; i++)
+  for (int i=0; i<allCircles.length; i++)
   {
     allCircles[i] = new Circle();
   }
@@ -17,7 +17,7 @@ void setup ()
 void draw ()
 {
   background (255); 
-  for (int u=0; u<20; u++) 
+  for (int u=0; u<allCircles.length; u++) 
   {
     allCircles[u].display();
   }
@@ -25,7 +25,7 @@ void draw ()
 
 void keyPressed () 
 {
-  for (int o=0; o<20; o++)
+  for (int o=0; o<allCircles.length; o++)
   {
     if (keyCode == UP)
     {
