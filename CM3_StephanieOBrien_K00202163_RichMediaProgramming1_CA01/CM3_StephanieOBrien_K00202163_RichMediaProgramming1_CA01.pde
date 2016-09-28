@@ -1,4 +1,3 @@
-
 int speed = 5;
 
 Circle [] allCircles = new Circle [20];

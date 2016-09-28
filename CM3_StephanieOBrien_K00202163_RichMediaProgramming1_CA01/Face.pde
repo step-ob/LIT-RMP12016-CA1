@@ -20,8 +20,8 @@ class Face
     fill(255,0,0);
 
     noStroke();
-    ellipse(-50,90,100,50);
-    ellipse(50,90,100,50);
+    triangle(-140,80,-110,110,-80,80);
+    triangle(80,80,110,110,140,80);
     
     popMatrix();
   }
