@@ -29,7 +29,7 @@ void keyPressed ()
   {
     if (keyCode == UP)
     {
-      allCircles[o].yPos +=speed;
+      allCircles[o].yPos -=speed;
     }
   }
 }
