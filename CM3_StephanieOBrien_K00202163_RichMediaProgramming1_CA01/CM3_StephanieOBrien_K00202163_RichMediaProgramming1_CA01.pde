@@ -23,7 +23,7 @@ void draw ()
   {
     allCircles[u].display();
   }
-  myFace.display();
+  myFace.display(mouseX, mouseY);
 }
 
 void keyPressed () 

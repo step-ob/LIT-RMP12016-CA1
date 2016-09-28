@@ -1,5 +1,5 @@
-class Circle {
- 
+class Circle 
+{
   float xPos = random(width);
   float yPos = random(height);
   float r = random(10, 50);
