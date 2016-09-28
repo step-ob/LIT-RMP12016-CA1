@@ -16,12 +16,12 @@ void setup ()
 
 void draw ()
 {
- // fill (fillVal);
- // ellipse(circleX, circleY, 100, 100);
+  background (255);
 }
 
- void keyPressed () {
-  background (255);
+void keyPressed () 
+{
+
   if (key == CODED) {
     if (keyCode == UP) {
    //   fillVal = 255;
