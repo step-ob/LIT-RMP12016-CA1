@@ -17,11 +17,9 @@ class Face
     line(-180,80,180,80);
     strokeWeight(6);
   
-    fill(255,0,0);
-
-    noStroke();
-    triangle(-140,80,-110,110,-80,80);
-    triangle(80,80,110,110,140,80);
+    fill(57,198,57);
+    triangle(-140,80,-120,110,-80,80);
+    triangle(80,80,120,110,140,80);
     
     popMatrix();
   }
