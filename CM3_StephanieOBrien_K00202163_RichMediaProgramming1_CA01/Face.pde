@@ -22,11 +22,11 @@ class Face
     fill(255,0,0);
     noStroke();
     triangle(-140,80,-110,110,-80,80);
-    triangle(80,80,110,110,140,80);
+    triangle(80,55,110,110,140,55);
     
     //eyebrow
-    stroke(126);
-    line(-180,80,180,80);
+    stroke(0);
+    line(-133,55,133,55);
     strokeWeight(6);
 
     
