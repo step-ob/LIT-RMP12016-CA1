@@ -53,7 +53,7 @@ void keyPressed ()
   }
 }
 
-void mousePressed()
+void mouseClicked()
 {
 
 }
