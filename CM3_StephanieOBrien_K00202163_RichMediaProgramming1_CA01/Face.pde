@@ -4,32 +4,49 @@ class Face
   float heightSize = 300;
   
   void display (int xPos, int yPos) 
-  {
-    
+  {   
     pushMatrix();
     translate(xPos, yPos);
     
     //round face
     noStroke();
+    //colour gradient
     for (int i = 1; i < 150; i++) 
     {
       fill(float (i)*2);
-      // fill(252, 252, 233);
       ellipse(0, 0, widthSize-(2*i), heightSize-(2*i));
     }
     
     //eyes
-    fill(255,0,0);
+    fill(115,230,0);
     noStroke();
-    triangle(-140,80,-110,110,-80,80);
-    triangle(80,55,110,110,140,55);
+    //eye left
+    triangle(-55,30,-95,70,-115,33);
+    //eye right
+    triangle(55,30,95,70,115,33);
+    
+    //eyes inner
+    fill(179,255,102);
+    noStroke();
+    //eye inner left
+    triangle(-65,30,-95,70,-110,33);
+    //eye inner right
+    triangle(65,30,95,70,115,33);
+    //eyeliner
+    stroke(0);
+    strokeWeight(5);
+    //eyeliner left
+    line(-95,68,-115,33);
+    //eyeliner right
+    line(95,68,115,33);
     
     //eyebrow
     stroke(0);
-    line(-133,55,133,55);
-    strokeWeight(6);
+    noFill();
+    //line(-133,40,133,40); straight line
+    arc(0,40,281,25,-PI,0);
+    strokeWeight(5);
 
-    
     popMatrix();
   }
 }
