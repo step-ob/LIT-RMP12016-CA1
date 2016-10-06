@@ -31,7 +31,7 @@ void draw ()
     allCircles[u].display();
   }
   myBody.display(mouseX, mouseY);
-  myFace.display(mouseX, mouseY);
+  myFace.display(currentPos.x, currentPos.y);
 }
 
 void keyPressed () 
@@ -61,5 +61,20 @@ void keyPressed ()
 void mouseClicked()
 {
 
+}
+
+MousePoint getMousePosition ()
+{
+  MousePoint mP;
+  if ((mouseOnSketch == false) && (mouseX == 0))
+  {
+    mP = new  MousePoint (width/2, height/2);
+  }
+  else
+  {
+    mouseOnSketch = true;
+    mP = new MousePoint (mouseX, mouse Y);
+  }
+  return mP;
 }
       
