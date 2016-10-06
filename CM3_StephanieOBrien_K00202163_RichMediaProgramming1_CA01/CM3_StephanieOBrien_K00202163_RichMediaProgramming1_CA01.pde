@@ -1,3 +1,5 @@
+boolean mouseOnSketch = false;
+
 int speed = 5;
 
 //array for circles
@@ -15,6 +17,9 @@ void setup ()
   }
   myBody = new Body();
   myFace = new Face();
+  
+  MousePoint currentPos;
+  currentPos = getMousePosition();
 }
 
 void draw ()
