@@ -66,6 +66,8 @@ void mouseClicked()
 
 MousePoint getMousePosition ()
 {
+  // when the pointer of the mouse is not on the sketch, myFace and myBody will automatically go to the middle of the sketch
+  // and when the pointer is on the sketch, myFace and myBody will follow the pointer.
   MousePoint mP;
   if ((mouseOnSketch == false) && (mouseX == 0))
   {
