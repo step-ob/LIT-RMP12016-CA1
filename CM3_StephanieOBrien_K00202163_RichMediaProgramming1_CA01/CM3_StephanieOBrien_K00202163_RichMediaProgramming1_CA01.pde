@@ -31,7 +31,7 @@ void draw ()
   MousePoint currentPos;
   currentPos = getMousePosition();
   
-  myBody.display(mouseX, mouseY);
+  myBody.display(currentPos.x, currentPos.y);
   myFace.display(currentPos.x, currentPos.y);
 }
 
