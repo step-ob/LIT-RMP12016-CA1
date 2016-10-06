@@ -17,19 +17,20 @@ void setup ()
   }
   myBody = new Body();
   myFace = new Face();
-  
-  MousePoint currentPos;
-  currentPos = getMousePosition();
 }
 
 void draw ()
 {
   // place items into the sketch
-  background (255); 
+  background (255);
   for (int u=0; u<allCircles.length; u++) 
   {
     allCircles[u].display();
   }
+  
+  MousePoint currentPos;
+  currentPos = getMousePosition();
+  
   myBody.display(mouseX, mouseY);
   myFace.display(currentPos.x, currentPos.y);
 }
@@ -73,7 +74,7 @@ MousePoint getMousePosition ()
   else
   {
     mouseOnSketch = true;
-    mP = new MousePoint (mouseX, mouse Y);
+    mP = new MousePoint (mouseX, mouseY);
   }
   return mP;
 }
