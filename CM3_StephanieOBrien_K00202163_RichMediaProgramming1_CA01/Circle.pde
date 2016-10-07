@@ -16,7 +16,7 @@ class Circle
   void display () 
   {
     noStroke();
-    // colours and 
+    // colours and alpha
     fill(rColor, gColor, bColor, 90);
     ellipse(xPos, yPos, r, r);
   }

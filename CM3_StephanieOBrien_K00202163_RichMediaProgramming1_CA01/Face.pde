@@ -56,4 +56,28 @@ class Face
 
     popMatrix();
   }
+  
+  void eyesFace ()
+  {
+    //change colour
+    //eyes
+    fill(115,230,0);
+    noStroke();
+    
+    //eye inner left
+    triangle(-65,30,-95,70,-110,33);
+    
+    //eye inner right
+    triangle(65,30,95,70,115,33); 
+    
+    //eyes inner
+    fill(179,255,102);
+    noStroke();
+    
+    //eye left
+    triangle(-55,30,-95,70,-115,33);
+    
+    //eye right
+    triangle(55,30,95,70,115,33);  
+  }
 }
