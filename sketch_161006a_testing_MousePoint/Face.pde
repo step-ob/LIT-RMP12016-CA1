@@ -16,34 +16,27 @@ class Face
       fill(float (i)*2);
       ellipse(0, 0, widthSize-(2*i), heightSize-(2*i));
     }
-
+    
     //eyes
     fill(115,230,0);
     noStroke();
-    
     //eye left
     triangle(-55,30,-95,70,-115,33);
-    
     //eye right
-    triangle(55,30,95,70,115,33);  
+    triangle(55,30,95,70,115,33);
     
     //eyes inner
     fill(179,255,102);
     noStroke();
-    
     //eye inner left
     triangle(-65,30,-95,70,-110,33);
-    
     //eye inner right
     triangle(65,30,95,70,115,33);
-    
     //eyeliner
     stroke(0);
     strokeWeight(5);
-    
     //eyeliner left
     line(-95,68,-115,33);
-    
     //eyeliner right
     line(95,68,115,33);
     
