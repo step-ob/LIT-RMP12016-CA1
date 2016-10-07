@@ -27,11 +27,18 @@ class Body
     stroke(190);
     strokeWeight(25);
     line(-35, 170, -50, 200);
-    line(-50, 200, -55, 260);
+    line(-50, 200, -55, 250);
     
     //arms right
     line(35, 170, 50, 200);
-    line(50, 200, 55, 260);
+    line(50, 200, 55, 250);
+    
+    //legs left
+    line(-20, 250, -25, 280); 
+    line(-25, 280, -20, 310);
+    //legs right
+    line(20, 250, 25, 280);
+    line(25, 280, 20, 310);
     
     noStroke();
     fill(0);
@@ -41,13 +48,12 @@ class Body
     ellipse(28, 170, 5, 25);  
     //arm left elbow
     ellipse(-49, 200, 25, 5);
-    //arm righ elbow
+    //arm right elbow
     ellipse(49, 200, 25, 5);
-    
-    //legs left
-    
-    //legs right
-    
+    //shoe left
+    ellipse(-22, 317, 30, 10);    
+    //shoe right
+    ellipse(22, 317, 30, 10);     
     
     popMatrix();
   }
