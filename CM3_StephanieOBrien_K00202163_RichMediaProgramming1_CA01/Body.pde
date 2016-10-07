@@ -50,6 +50,18 @@ class Body
     ellipse(-49, 200, 25, 5);
     //arm right elbow
     ellipse(49, 200, 25, 5);
+    //hand left
+    ellipse(-55, 259, 25, 7);
+    //hand right
+    ellipse(56, 259, 25, 7);
+    //hip left
+    ellipse(-19, 250, 27, 5);
+    //hip right
+    ellipse(19, 250, 27, 5);
+    //knee left
+    ellipse(-24, 280, 25, 5);
+    //knee right
+    ellipse(25, 280, 25, 5);
     //shoe left
     ellipse(-22, 317, 30, 10);    
     //shoe right
