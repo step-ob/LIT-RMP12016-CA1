@@ -59,10 +59,11 @@ void keyPressed ()
   }
 }
 
-void mouseClicked()
-{
-
-}
+// when the mouse is clicked that the body will move ie dance
+//void mouseClicked()
+//{
+//  myBody.xPosBody +=-1;
+//}
 
 MousePoint getMousePosition ()
 {

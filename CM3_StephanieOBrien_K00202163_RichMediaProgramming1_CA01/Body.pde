@@ -1,5 +1,6 @@
 class Body
 {
+  float xPosBody;
   
   void display (int xPos, int yPos) 
   {   
