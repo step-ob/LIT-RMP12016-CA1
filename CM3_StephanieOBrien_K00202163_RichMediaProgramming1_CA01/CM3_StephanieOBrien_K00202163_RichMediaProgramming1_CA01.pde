@@ -71,11 +71,8 @@ void mouseClicked()
 {
   //when the mouse is clicked that the body will move ie dance
   //myBody.xPosBody +=-1;
-  print("Hi, my name is Marvin");
-  textSize(20);
-  fill(0);
-  text("I have a million ideas, but, they all point to certain death.", mouseX-280, mouseY-200);
-  myFace.eyesFace ();
+  print("My name is Marvin. ");
+  print("I have a million ideas, but, they all point to certain death.");
 }
 
 MousePoint getMousePosition ()
